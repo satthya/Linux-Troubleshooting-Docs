@@ -2,7 +2,7 @@ Problem:
 
 A developer was unable to SSH into a remote Linux server and received the following error:
 
-![SSH Error](ssh_error.png)
+![SSH Error](Image/ssh_error.png)
 
 Troubleshooting/Diagnose
 
