@@ -10,8 +10,11 @@ Troubleshooting/Diagnose
 	
 	2. Checked the user's last successful login attempt:
 		a. lastlog -u <username>
-		
-	3. Verified the user's login information:
+  
+  	3. Checked the log file for any error
+   		a. journalctl -u sshd.service
+	
+	4. Verified the user's login information:
 		a. getent passwd <username>  or cat /etc/passwd | grep <username>
 		
 
