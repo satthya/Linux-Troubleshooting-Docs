@@ -4,7 +4,7 @@ Problem:
 
 A developer was unable to SSH into a remote Linux server and received the following error:
 
-![SSH Error](Image/ssh_error_v2.PNG)
+![SSH Error](Image/ssh_error_v2.png.PNG)
 
 Troubleshooting/Diagnose
 
@@ -32,7 +32,7 @@ The user's limit was set to 1.
 
 Example entry from /etc/security/limits.conf:
 
-![SSH Error](Image/ssh_error_v2.1.PNG)
+![SSH Error](Image/ssh_error_v2.1.png.PNG)
 
 Solution:
 
