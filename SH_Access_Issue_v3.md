@@ -5,7 +5,7 @@ Problem:
 A developer was unable to SSH into a remote Linux server and received the following error message:
 "Connection Refused". This issue occurred while trying to access the server using password authentication.
 
-![SSH Error](Image/ssh_error_v3.png)
+![SSH Error](Image/ssh_error_v3.PNG)
 
 
 Troubleshooting/Diagnose
