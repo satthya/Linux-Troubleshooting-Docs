@@ -4,7 +4,7 @@ Problem:
 
 A user has deployed an application on a Red Hat Linux server with a web server. However, instead of loading the expected application, the browser displays the default Red Hat Test Page.
 
-![SSH Error](Image/webserver_error_v1.png)
+![SSH Error](Image/webserver_error_v1.PNG)
 
 
 Troubleshooting/Diagnose
@@ -19,7 +19,7 @@ Troubleshooting/Diagnose
 
 		a. tail -f /var/log/httpd/error_log
 
-![SSH Error](Image/webserver_error_v2.png)
+![SSH Error](Image/webserver_error_v2.PNG)
 
 
 	3. Checked index.html permission level
