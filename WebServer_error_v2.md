@@ -1,4 +1,4 @@
-Title: Fixing "Web Server" file not accessible
+Title: Resolving HTTPD Service and SELinux Issues on Red Hat
 
 Problem:
 
@@ -100,4 +100,4 @@ After implementing the resolution steps:
 
 	• The web server successfully serves the intended web page.
 
-SELinux policies are correctly enforced, ensuring secure access to web content.
+	• SELinux policies are correctly enforced, ensuring secure access to web content.
