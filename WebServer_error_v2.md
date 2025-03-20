@@ -4,8 +4,7 @@ Problem:
 
 A web server running on a Red Hat Linux system has stopped serving the expected web page. Instead, users are experiencing  the following issues:
 
-
-
+![SSH Error](Image/webserver_error_v2.PNG)
 
 Troubleshooting/Diagnose
 
@@ -21,7 +20,7 @@ Troubleshooting/Diagnose
 
 		a. journalctl -u httpd
 
-
+![SSH Error](Image/webserver_error_v2.1.PNG)
 
 
 	4. Examined httpd log file for error
@@ -29,7 +28,7 @@ Troubleshooting/Diagnose
 		a. cd /var/log/httpd
 		b. cat error_log
 		
-
+![SSH Error](Image/webserver_error_v2.2.PNG)
 
 	5. Verified existence of index.html in the web root directory
 	
@@ -44,12 +43,12 @@ Troubleshooting/Diagnose
 		a. sestatus
 	
 	8. Examined SELinux audit logs for denied access
-
-
 		
 		a. /var/log/audit
 		b. cat audit.log | grep avc
-	
+  
+![SSH Error](Image/webserver_error_v2.3.PNG)
+ 
 	9. Disable SELinux temporary to test the application
 	
 		a. setenforce 0
