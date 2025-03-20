@@ -28,7 +28,7 @@ Troubleshooting/Diagnose
 		a. cd /var/log/httpd
 		b. cat error_log
 		
-![SSH Error](Image/webserver_error_v2.2.PNG)
+![SSH Error](Image/webserver_error_v2.2.png)
 
 	5. Verified existence of index.html in the web root directory
 	
