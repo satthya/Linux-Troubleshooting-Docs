@@ -62,7 +62,7 @@ Solution:
 Update SELinux Context
 Changed SELinux context from admin_home_t to httpd_sys_content_t:
 
-	• restorecon -RV /var/www/html
+	• restorecon -Rv /var/www/html
 	• systemctl restart httpd
 
 Outcome:
