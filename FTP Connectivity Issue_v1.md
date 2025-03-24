@@ -4,7 +4,7 @@ Problem:
 
 The user reported being unable to access the FTP server. The following error message was encountered:
 
-![SSH Error](Image/ftp_error_v1.png)
+![SSH Error](Image/ftp_error_v1.PNG)
 
 
 Troubleshooting/Diagnose
