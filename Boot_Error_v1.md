@@ -4,7 +4,7 @@ Problem:
 
 The user is unable to boot into the Linux machine. Upon startup, the system drops to the GRUB rescue prompt instead of loading the operating system. This indicates that the GRUB bootloader is missing or corrupted.
 
-![SSH Error](Image/ssh_error.png)
+![SSH Error](Image/boot_error_v1.PNG)
 
 Troubleshooting/Diagnose
 
