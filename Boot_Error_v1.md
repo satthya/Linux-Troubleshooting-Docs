@@ -15,16 +15,20 @@ Troubleshooting/Diagnose
 	3. Entered the chroot environment:
 	
 		a. chroot /mnt/sysimage
+  
+  	4. Entered the boot directory.
 
-	4. Reinstalled GRUB to the disk:
+   		a. cd boot
+
+	5. Reinstalled GRUB to the disk:
 	
 		a. grub2-install /dev/sda
 		
-	5. Rebuilt the GRUB configuration file:
+	6. Rebuilt the GRUB configuration file:
 	
 		a. grub2-mkconfig -o /boot/grub2/grub.cfg
 	
-	6. reboot
+	7. reboot
 
 Root Cause:
 
