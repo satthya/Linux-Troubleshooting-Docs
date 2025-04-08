@@ -15,12 +15,16 @@ Troubleshooting/Diagnose
 	3. Entered the chroot environment:
 	
 		a. chroot /mnt/sysimage
+  
+  	4. Entered the boot directory.
 
-	4. Regenerated the initramfs file
+		a. cd boot
+
+	5. Regenerated the initramfs file
 	
 		a. dracut -f initramfs-$(uname -r).img $(uname -r)
 		
-	5. reboot
+	6. reboot
 
 Root Cause:
 
