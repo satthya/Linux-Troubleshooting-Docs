@@ -4,7 +4,7 @@ Problem:
 
 The user is unable to boot into the Linux machine. Upon startup, the system showing "initramfs-..." not found.
  
-![SSH Error](Image/boot_error_v2.png)
+![SSH Error](Image/boot_error_v2.PNG)
 
 Troubleshooting/Diagnose
 
