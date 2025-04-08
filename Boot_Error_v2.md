@@ -32,7 +32,7 @@ Root Cause:
 	
 Solution:
 
-	1. Recreated the initramfs file from rescue mode using dracut.
+	1. Recreated the initramfs file from rescue mode using dracut. 
 	
 Outcome:
 
