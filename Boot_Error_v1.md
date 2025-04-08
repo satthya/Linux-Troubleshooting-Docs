@@ -40,4 +40,4 @@ Solution:
 	
 Outcome:
 
-After following the above steps, user able to boot up.
+After following the above steps, user able to boot up. 
