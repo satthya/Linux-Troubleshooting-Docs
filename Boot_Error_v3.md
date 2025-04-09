@@ -4,7 +4,7 @@ Problem:
 
 The user is unable to boot into the Linux machine. Upon startup, the system showing blank screen with no activity.
  
-![SSH Error](Image/boot_error_v3.png)
+![SSH Error](Image/boot_error_v3.PNG)
 
 Troubleshooting/Diagnose
 
