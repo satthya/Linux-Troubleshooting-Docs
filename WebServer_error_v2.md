@@ -1,6 +1,6 @@
 Title: Resolving HTTPD Service and SELinux Issues on Red Hat
 
-Problem:
+Problem: 
 
 A web server running on a Red Hat Linux system has stopped serving the expected web page. Instead, users are experiencing  the following issues:
 
