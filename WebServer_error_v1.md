@@ -1,6 +1,6 @@
 Title: Fixing "Web Server" file not accessible
 
-Problem:
+Problem: 
 
 A user has deployed an application on a Red Hat Linux server with a web server. However, instead of loading the expected application, the browser displays the default Red Hat Test Page.
 
