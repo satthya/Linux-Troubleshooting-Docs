@@ -1,4 +1,4 @@
-Title: Fixing "initramfs File Corrupted on Linux"
+Title: Fixing "initramfs File Corrupted on Linux" or "Kernel panic after boot"
 
 Problem:
 
