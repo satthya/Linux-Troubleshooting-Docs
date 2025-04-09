@@ -55,4 +55,4 @@ Solution:
 
 Outcome:
 
-After following the above steps, FTP connectivity was successfully established, and the issue was resolved.
+After following the above steps, FTP connectivity was successfully established, and the issue was resolved. 
