@@ -1,5 +1,6 @@
-**Title: Fixing "initramfs File Corrupted on Linux" or "Kernel panic after boot"
-**
+Title: Fixing "initramfs File Corrupted on Linux" or "Kernel panic after boot"
+
+
 Problem:
 
 The user is unable to boot into the Linux machine. Upon startup, the system showing "initramfs-..." not found.
