@@ -16,7 +16,7 @@ Troubleshooting/Diagnose
 	
 		a. chroot /mnt/sysimage
   
-  	4. Entered the boot directory.
+  	4. Navigate to the /boot directory to inspect boot-related files.
 
 		a. cd boot
 
