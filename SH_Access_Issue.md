@@ -21,7 +21,7 @@ Troubleshooting/Diagnose
 Root Cause:
 
 The user's shell was set to /bin/false, which prevented SSH access.
-
+ 
 Example entry from /etc/passwd:
 
 	• linda:x:1001:1001::/home/linda:/bin/false
