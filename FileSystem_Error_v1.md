@@ -5,7 +5,7 @@ Problem:
 The user is unable to mount the dev/sdb1 partition to the /mnt directory.
 When attempting the mount operation, the system throws the following error:
  
-![SSH Error](Image/ssh_error.png)
+![SSH Error](Image/filesystem_error_v1.PNG)
 
 Troubleshooting/Diagnose
 
@@ -13,7 +13,7 @@ Troubleshooting/Diagnose
 
 		a. dmesg | grep sdb
 	
-![SSH Error](Image/ssh_error.png)
+![SSH Error](Image/filesystem_error_v1.1.PNG)
 	
 	2. Check for backup superblocks
 
@@ -23,7 +23,7 @@ Troubleshooting/Diagnose
 
 		a. fsck /dev/sdb1
 	
-![SSH Error](Image/ssh_error.png)	
+![SSH Error](Image/filesystem_error_v1.2.PNG)	
 
 Root Cause:
 
