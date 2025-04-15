@@ -15,7 +15,7 @@ Steps
 
 		a. fdisk /dev/sdb
 	
-	![SSH Error](Image/lvm3.PNG)
+	![Image](Image/lvm3.PNG)
 
 	3. Check partition.
 	
