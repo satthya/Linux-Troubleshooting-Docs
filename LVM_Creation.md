@@ -15,15 +15,15 @@ Steps
 
 		a. fdisk /dev/sdb
 	
-		![SSH Error](Image/ssh_error.png)
+		![SSH Error](Image/lvm3.PNG)
 
 	3. Check partition.
 	
 		a. lsblk
 		
-			§ You should now see /dev/sdb1
+			* You should now see /dev/sdb1
 	
-		![SSH Error](Image/ssh_error.png)
+		![SSH Error](Image/lvm1.PNG)
 
 	4. Create Physical Volume.
 	
@@ -50,4 +50,4 @@ Steps
 
 		a. df -h
 
-	![SSH Error](Image/ssh_error.png)
+	![SSH Error](Image/lvm2.PNG)
