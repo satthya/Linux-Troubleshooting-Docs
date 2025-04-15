@@ -23,7 +23,7 @@ Steps
 		
 			* You should now see /dev/sdb1
 	
-	![SSH Error](Image/lvm1.PNG)
+	![SSH Error](Image/lvm1_error.PNG)
 
 	4. Create Physical Volume.
 	
