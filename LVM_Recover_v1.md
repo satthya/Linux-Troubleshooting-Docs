@@ -16,21 +16,21 @@ Steps
 			
 				□ Find the id and device fields under the physical volume section.
 
-	
+	![SSH Error](Image/lvm1.PNG)
 
 
 	2. Recreate the physical ID with the same unique ID from backup 
 
 		a. pvcreate --uuid "ux2CHm-noOr-9oCX-n3uQ-cXk9-TrB9-22w00l" --restorefile /etc/lvm/backup/newvg /dev/sdb1
 	
-	
+	![SSH Error](Image/lvm2.PNG)
 
 
 	3. Confirm available restore version from /etc/lvm/archive
 
 		a. vgcfgrestore -l newvg
 
-	
+	![SSH Error](Image/lvm3.PNG)
 
 	4. Restore the volume group metadata to the preferred version
 	
@@ -45,7 +45,7 @@ Steps
 
 		a. mount /dev/newvg/newlv /mnt/mylvm
 	
-	
+	![SSH Error](Image/lvm4.PNG)
 
 Root Cause:
 
