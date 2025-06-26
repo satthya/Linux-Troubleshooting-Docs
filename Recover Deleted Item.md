@@ -31,7 +31,9 @@ Remark :- Here, 3 is the file descriptor number corresponding to the deleted fil
 Solution:
 
 • Used the lsof command to identify a running process that still had the deleted file open.
+
 • Retrieved the file content directly from the /proc/<pid>/fd/<fd> file descriptor.
+
 • Successfully copied the file to a new location (/tmp) for recovery.
 
 Outcome:
