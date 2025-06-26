@@ -37,4 +37,5 @@ Solution:
 • Successfully copied the file to a new location (/tmp) for recovery.
 
 Outcome:
+
 The user was able to recover the deleted file from memory without using any backup tools. System integrity and data were preserved
