@@ -8,7 +8,7 @@ Since root typically bypasses file permissions, this suggests a different underl
 
 Troubleshooting/Diagnose
 
-Method1
+Method1 : Check File Permissions and Mount Options
 
 1. Check file execute permission:
 	Ensure the script has the executable (x) permission
