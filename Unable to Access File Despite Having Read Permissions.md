@@ -51,7 +51,7 @@ Troubleshooting/Diagnose
 	
 Conclusion
 
-		• Even with read permission, file access can be blocked by:
+		Even with read permission, file access can be blocked by:
 		• Lack of execute (x) permission on the parent directory
 		• ACL rules
 		• SELinux/AppArmor restrictions
