@@ -55,25 +55,28 @@ You are acting as a PostgreSQL Database Administrator. Complete the following ta
 1. Create databases:
 
    CREATE DATABASE db1;
+
    CREATE DATABASE db2;
 
-2. List databases:
+3. List databases:
 
    \l
 
-3. Connect to a database:
+4. Connect to a database:
 
    \c db1
 
 
-4. Create sample table and insert data:
+5. Create sample table and insert data:
 
    CREATE TABLE list (s_no SERIAL PRIMARY KEY, name TEXT, email TEXT);
+
    INSERT INTO list (s_no, name, email) VALUES (1, 'Satthya', 'satthya@gmail.com');
 
-5. Verify:
+7. Verify:
 
    \dt
+
    SELECT * FROM list;
 
 *Repeat steps 3–5 for `db2`.*
@@ -85,16 +88,18 @@ You are acting as a PostgreSQL Database Administrator. Complete the following ta
 1. Create users with passwords:
 
    CREATE USER user1 WITH PASSWORD 'Welcome@1';
+
    CREATE USER user2 WITH PASSWORD 'Welcome@2';
 
 
-2. Set password expiry:
+3. Set password expiry:
 
    ALTER ROLE user1 VALID UNTIL '2025-08-12';
+
    ALTER ROLE user2 VALID UNTIL '2025-08-12';
 
 
-3. Verify roles:
+5. Verify roles:
 
    \du
 
@@ -111,12 +116,14 @@ SELECT usename, client_addr, backend_start FROM pg_stat_activity;
 1. Grant access on `db1` to `user1`:
 
    GRANT ALL PRIVILEGES ON DATABASE db1 TO user1;
+
    GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO user1;
 
 
-2. Grant access on `db2` to `user2`:
+3. Grant access on `db2` to `user2`:
 
    GRANT ALL PRIVILEGES ON DATABASE db2 TO user2;
+
    GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO user2;
 
 
@@ -127,28 +134,32 @@ SELECT usename, client_addr, backend_start FROM pg_stat_activity;
 1. vi `postgresql.conf`:
 
    listen_addresses = '*'
+
    port = 5432
 
 
-2. vi `pg_hba.conf`:
+3. vi `pg_hba.conf`:
 
    host    db1    user1    192.168.0.10/24    scram-sha-256
+
    host    db2    user2    192.168.0.10/24    scram-sha-256
 
 
-3. Restart PostgreSQL:
+5. Restart PostgreSQL:
 
    systemctl restart postgresql-16
 
 
-4. Open firewall ports:
+6. Open firewall ports:
 
    firewall-cmd --add-service=postgresql --permanent
+
    firewall-cmd --add-port=5432/tcp --permanent
+
    firewall-cmd --reload
 
 
-5. Launch **pgAdmin** on a client machine:
+8. Launch **pgAdmin** on a client machine:
    - Register server:
      - **Name:** db1
      - **Host:** PostgreSQL server IP
@@ -163,13 +174,16 @@ SELECT usename, client_addr, backend_start FROM pg_stat_activity;
 1. Create backup directory:
 
    mkdir -p /pg_backup/dump_backup
+
    chown -R postgres:postgres /pg_backup/dump_backup
 
 
-2. As `postgres` user, back up the databases:
+3. As `postgres` user, back up the databases:
 
    su - postgres
+
    pg_dump -d db1 -f /pg_backup/dump_backup/db1_backup.sql
+
    pg_dump -d db2 -f /pg_backup/dump_backup/db2_backup.sql
 
 
@@ -180,26 +194,32 @@ SELECT usename, client_addr, backend_start FROM pg_stat_activity;
 1. Drop existing databases:
 
    DROP DATABASE db1;
+
    DROP DATABASE db2;
 
 
-2. Recreate databases:
+3. Recreate databases:
 
    CREATE DATABASE db1;
+
    CREATE DATABASE db2;
 
 
-3. Restore from dumps:
+5. Restore from dumps:
 
    su - postgres
+
    psql -d db1 -f /pg_backup/dump_backup/db1_backup.sql
+
    psql -d db2 -f /pg_backup/dump_backup/db2_backup.sql
 
 
-4. Verify:
+7. Verify:
 
    \c db1
+
    \dt
+
    SELECT * FROM list;
 
 *Repeat verification for `db2`.*
