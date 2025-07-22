@@ -1,4 +1,4 @@
-Title:  Install PostgreSQL on a Red Hat-Based Server
+Title:  Install PostgreSQL on a Red Hat-Based Server.
 
 Problem:
 
